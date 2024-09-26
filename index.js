@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require("fs");
 
-const dbPath = ".nosana/nosana_db.json";
+const dbPath = "~/.nosana/nosana_db.json";
 var db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 db.resources.volumes[
