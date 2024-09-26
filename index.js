@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-var fs = require("fs");
+import fs from ("fs");
 
-const appRoot = process.cwd();
-const dbPath = appRoot + "/.nosana/nosana_db.json";
+const relativePath = (a) => join(dirname(fileURLToPath(import.meta.url)), a);
+
+const dbPath = relativePath + "/.nosana/nosana_db.json";
 var db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 db.resources.volumes[
