@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import fs from ("fs");
-import { dirname, join } from 'path'
-import { fileURLToPath } from 'url'
+import fs from "fs";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 
 const relativePath = (a) => join(dirname(fileURLToPath(import.meta.url)), a);
 
