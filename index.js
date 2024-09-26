@@ -1,5 +1,5 @@
 var fs = require("fs");
-const db = require("../.nosana/nosana_db.json");
+const db = require(".nosana/nosana_db.json");
 
 db.resources.volumes[
   "https://pub-5bc58981af9f42659ff8ada57bfea92c.r2.dev/controlnet"
@@ -11,8 +11,4 @@ db.resources.volumes[
     "https://safetensor.sogni.ai/Sogni+Supported+SD1.5-https://safetensor.sogni.ai/Sogni+Supported+SDXL"
   ];
 
-fs.writeFileSync(
-  "../.nosana/nosana_db.json",
-  JSON.stringify(db, null, 2),
-  "utf8"
-);
+fs.writeFileSync(".nosana/nosana_db.json", JSON.stringify(db, null, 2), "utf8");
