@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fs = require("fs");
 const db = require(".nosana/nosana_db.json");
 
