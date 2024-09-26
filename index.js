@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 
 const relativePath = (a) => join(dirname(fileURLToPath(import.meta.url)), a);
 
-const dbPath = relativePath("/.nosana/nosana_db.json");
+const dbPath = relativePath("~/.nosana/nosana_db.json");
 var db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 db.resources.volumes[
